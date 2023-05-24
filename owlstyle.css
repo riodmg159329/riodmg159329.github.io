@@ -1,0 +1,187 @@
+.owl-carousel {
+
+    width: 75%;
+    /* outline: 10px solid green; */
+}
+/* .owl-stage{
+    overflow: hidden;
+} */
+
+
+.owl-theme .owl-dots .owl-dot.active span {
+    /* background-color: brown; */
+    /* width: 500px;
+    height: 800px; */
+    /* background: url(data-img)!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    -webkit-filter: brightness(1) !important;
+    filter: brightness(1);
+}
+
+.owl-theme .owl-dots {
+    width: 60%;
+    /* outline: rgb(68, 0, 255) 20px solid; */
+    display: flex !important;
+    height: 50%
+        /* justify-content: center;
+    align-items: center;
+    */
+}
+
+.owl-dots {
+    position: absolute;
+    top: 73%;
+    right: 0.5%;
+    /* outline: 10px solid red; */
+    /* z-index: 100 !important; */
+    background-color: black
+}
+
+.owl-theme .item {
+    width: 100% !important;
+    height: 39vw;
+    /* height: 0.01%!important; */
+    /* outline: 5px solid blue; */
+    /* position: relative;
+    top: 0;
+    right: -500px; */
+
+}
+
+
+
+
+.owl-theme .item img {
+    width: 100% !important;
+
+    /* outline: 5px solid blue;
+    height: 500px; */
+    /* position: relative;
+    top: 0;
+    right: -500px; */
+
+}
+
+.owl-theme .owl-dots .owl-dot {
+    /* outline: blueviolet 30px solid; */
+    width: 33%;
+}
+
+.owl-theme .owl-dots .owl-dot:nth-of-type(1) span {
+    -webkit-filter: brightness(1);
+    filter: brightness(.5);
+    width: 100%;
+    height: 100%;
+    background-image: url('img/d0069686ab19b4c8b15bb59c8792f42e.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0% !important;
+}
+
+
+
+
+.owl-theme .owl-dots .owl-dot:nth-of-type(2) span {
+    -webkit-filter: brightness(1);
+    filter: brightness(.5);
+    /* z-index: 100; */
+    width: 100%;
+    height: 100%;
+    background-image: url('img/football-player-arena_23-2147644526.avif') !important;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0% !important
+}
+
+.owl-theme .owl-dots .owl-dot:nth-of-type(3) span {
+    -webkit-filter: brightness(1);
+    filter: brightness(.5);
+    /* z-index: 100; */
+    width: 100%;
+    height: 100%;
+    background-image: url('img/f7ea592d2441ff5d537d7451d8523c51.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0% !important;
+    background-position: center 0px;
+}
+
+.owl-theme .owl-dots .owl-dot:nth-of-type(1):hover span {
+    background-image: url('img/d0069686ab19b4c8b15bb59c8792f42e.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.owl-theme .owl-dots .owl-dot:nth-of-type(2):hover span {
+    background-image: url('img/football-player-arena_23-2147644526.avif') !important;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+
+}
+
+.owl-theme .owl-dots .owl-dot:nth-of-type(3):hover span {
+    background-image: url('img/f7ea592d2441ff5d537d7451d8523c51.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.owl-nav {
+    position: absolute;
+    width: 80%;
+    height:0.05px;
+    /* outline: 10px solid red; */
+    top: 40%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    z-index: 0;
+    background-color: aqua;
+
+}
+
+.owl-nav button {
+    width: 100px;
+    height: 100px;
+    /* justify-self: flex-end; */
+    border-radius: 50%!important;
+    border: 1px rgb(255, 252, 252) solid !important;
+    font-size: 30px!important;
+    line-height: 100px!important;
+    color: white!important;
+    
+}
+
+.owl-nav button:hover {
+    background-color: transparent !important
+}
+
+/* 
+.owl-theme .item {
+    width: 1000px;
+    height: 800px;
+
+} */
+
+
+

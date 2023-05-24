@@ -1,0 +1,193 @@
+.login_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/abstract-smooth-bubbles-blurred-background_23-2148205191.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login_wrap {
+    width: 1280px;
+    display: flex;
+    /* outline: red 5px solid; */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.login_left {
+    width: 50%;
+    /* outline: blue 5px solid; */
+    position: relative;
+    display: flex;
+    padding:200px 0;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.login_right {
+    width: 50%;
+}
+
+.welcome_word {
+    position: absolute;
+    z-index: 2;
+    font-size: 80px;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%) rotate(90deg);
+}
+
+.login_right .pic {
+    width: 100%;
+}
+
+.login_right .pic img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.login_right .text {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    /* -webkit-text-stroke: 2px rgb(255, 255, 255); */
+
+}
+
+.login_right {
+    position: relative;
+}
+
+.login_left_wrap .login_text {
+    font-size: 24px;
+    position: relative;
+}
+
+.login_left_wrap .login_text:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background-color: black;
+}
+
+.login_left_wrap .account {
+    padding: 20px 0;
+}
+
+.account .account_title {
+    font-size: 20px;
+}
+
+.account_input input {
+    width: 288px;
+    height: 37px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    color:#868686
+    /* background-color: #d9d9d9; */
+}
+
+.login_left_wrap .password_title {
+    font-size: 20px;
+}
+
+.login_left_wrap .password .password_input input {
+    width: 288px;
+    height: 37px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+}
+
+.login_left_wrap .btn {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    height: 37px;
+}
+
+.remember_forgot_password {
+    justify-content: space-between;
+    width: 288px;
+    padding: 5px 0 10px 0;
+    /* height:50px; */
+    display: flex;
+    align-items: center;
+    outline: red;
+
+}
+
+.remember_forgot_password>div input {
+    width: 15px;
+    height: 15px;
+
+}
+
+.remember_forgot_password a {
+    color: black;
+}
+
+.login_left_wrap .btn button {
+    width: 288px;
+    padding: 16px 0;
+    /* height: 50px; */
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color:#d9d9d9
+
+}
+.login_left_wrap .btn button:hover{
+    background-color:#fa5e8d
+    ;
+}
+.no_account {
+    margin-left: auto;
+
+}
+
+.no_account span {
+    margin: 5px;
+    color: black;
+}
+
+.btn button i {
+    padding: 0 10px;
+}
+
+.btn .pic{
+    display: inline-block;
+    width: 16px;
+}
+.btn .pic img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.login_left .logo{
+ width:300px;
+}
+.login_left .logo img{
+    width: 100%;
+}
+
+#remember{
+   margin-right: 5px;
+}

@@ -1,0 +1,378 @@
+/* .jordan_main_area {
+    width: 100%;
+    height: 200vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    outline: blue 5px solid;
+} */
+
+
+/* .jordan_logo {
+    grid-column: 11/13;
+    grid-row: 1/3;
+    outline: rgb(132, 0, 255) 5px solid;
+} */
+/* 
+.jordan_logo .pic {
+    width: 88.75%;
+    margin-left: auto
+}
+
+.jordan_logo img {
+    width: 100%;
+}
+
+.main_text {
+    grid-column:3/10 ;
+    grid-row:12/15 ;
+    outline: 10px solid blueviolet;
+}
+.main_text h3{
+
+}
+.jordan_main_pic {
+    padding: 3.4375% 0 0 4.638%;
+    grid-column: 3/9;
+    grid-row: 3/11;
+    outline: black solid 5px;
+    outline: 10px solid blueviolet;
+}
+
+.jordan_main_pic .pic {
+    width: 94.47%;
+    outline: 10px solid rgb(43, 205, 226);
+
+}
+
+.jordan_main_pic .pic img {
+    width: 100%;
+} */
+
+/* .main_text {
+    grid-column: 6/ 17;
+    grid-row: 25/43;
+    outline: 10px solid blueviolet;
+} */
+
+/* .air_jordan_one {
+    grid-column: 9/12;
+    grid-row: 10/14;
+    padding: 7.2% 0 0 17%;
+    outline: 10px solid blueviolet;
+}
+
+.air_jordan_one .pic {
+    width:91%;
+    outline: 10px solid rgb(226, 43, 89);
+
+}
+
+.air_jordan_one .pic img {
+    width: 100%;
+}
+
+.jordan_dumk {
+    outline: 10px solid blueviolet;
+} */
+
+
+
+
+
+
+
+
+.jordan_main_area {
+    padding: 0 0 410px 0;
+    width: 100%;
+    /* height: ; */
+
+    /* outline: blue 5px solid; */
+}
+
+/* 
+.jordan_part_one {
+    outline: rgb(255, 0, 170) 5px solid;
+}
+
+.jordan_part_two {
+    outline: rgb(255, 0, 221) 5px solid;
+}
+
+.jordan_part_three {
+    outline: rgb(255, 174, 0) 5px solid;
+}
+
+.jordan_part_four {
+    outline: rgb(0, 238, 255) 5px solid;
+} */
+
+.jordan_logo .pic {
+    width: 284px;
+    margin-left: auto;
+}
+
+.jordan_logo img {
+    width: 100%;
+}
+
+.jordan_part_two {
+    display: flex;
+}
+
+
+
+.jordan_part_two .jordan_name {
+    width: 364px;
+
+}
+
+.jordan_part_two .jordan_name .name_block {
+    width: 1232px;
+    height: 137px;
+    transform: rotate(-90deg);
+    position: relative;
+    border: black 1px solid;
+    top: 1470px;
+    left: -487px;
+}
+
+.jordan_part_two .jordan_name .name_block .micheal_jordan {
+    font-size: 96px;
+    width: fit-content;
+    position: absolute;
+    top: -57px;
+    left: 308px
+}
+
+.jordan_part_three {
+    width: 100%;
+    display: flex;
+    /* position: relative; */
+    justify-content: end;
+    /* outline: red solid 5px; */
+    ;
+}
+
+.jordan_part_three .main_text {
+    margin-top: 155px;
+    transform: translateX(-140px);
+    width: 1096px;
+
+}
+
+.jordan_part_three .main_text h3 {
+    width: 1190px;
+    display: flex;
+    flex-direction: column;
+    font-size: 120px;
+    /* outline: blue 5px solid; */
+    margin-bottom: -18px;
+}
+
+.jordan_main_pic {
+    position: relative;
+}
+
+.jordan_main_pic .block:nth-of-type(1) {
+    width: 762px;
+    height: 1099px;
+    /* outline: blue solid 5px; */
+    border: 1px solid black;
+    background-color: #fff;
+    position: absolute;
+    top: 61px;
+    left: 165px;
+    z-index: -1;
+}
+
+.jordan_main_pic .block:nth-of-type(2) {
+    width: 762px;
+    height: 1099px;
+    border: 1px solid black;
+    position: absolute;
+    top: 95px;
+    left: 188px;
+    /* outline: blue solid 5px; */
+    z-index: -2;
+}
+
+.jordan_part_three .main_text p {
+    font-size: 36px;
+}
+
+.air_jordan_one {
+
+    transform: translateX(-7px) translateY(133px);
+    width: 348px;
+    height: 535px;
+    background-color: #D9D9D9;
+    ;
+
+}
+
+.air_jordan_one .pic {
+    transform: translateX(-128px) translateY(-51px);
+    width: 437px;
+}
+
+.air_jordan_one .pic img {
+    width: 100%;
+}
+
+.jordan_part_four {
+    /* display: flex;
+    justify-content: end; */
+    padding: 0 124px 0 0;
+}
+
+.jordan_part_four .jordan_dumk {
+    transform: translateY(40px);
+    /* outline: blue 5px solid; */
+    margin-left: auto;
+    width: 1033px;
+    height: 657px;
+    border: 1px solid black;
+}
+
+
+
+.jordan_part_four .jordan_dumk .pic {
+    transform: translateX(43px) translateY(43px);
+    width: 1089px;
+}
+
+.jordan_part_four .jordan_dumk .pic img {
+    width: 100%;
+}
+
+
+/* rose */
+
+.derric_rose_main_area {
+    padding:0 0 110px 0 ;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.derric_rose_main_area .part_one {
+    display: flex;
+    gap: 86px;
+}
+
+.addidas_logo {
+
+    margin-left: auto;
+    width: 284px;
+
+}
+
+.addidas_logo img {
+    width: 100%;
+}
+
+.part_one_right {
+    width: 100%;
+    /* outline: blue solid 5px; */
+    order: 1;
+}
+
+
+.part_one_right h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 128px;
+    margin: 139px 0
+}
+
+.part_one_left {
+    margin-top: 207px;
+    margin-left: 67px;
+}
+
+.addidas_superstar .part_one_left .text p {
+    font-size: 48px;
+}
+
+.part_one_left .pic {
+    width: 807px;
+    height: 1089px;
+}
+
+.part_one_left .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.part_one_right .name_pic_wrap {
+    /* outline: orangered 5px solid; */
+    display: flex;
+    position: relative;
+}
+
+.name_pic_wrap .pic {
+    width: 804px;
+}
+
+.name_pic_wrap .pic img {
+    width: 100%;
+}
+
+.addidas_superstar .name_pic_wrap .name {
+    position: absolute;
+    font-size: 128px;
+    width: 850px;
+    /* outline: blue 5px solid; */
+    top: 353px;
+    left: 442px;
+    transform: rotate(90deg);
+}
+
+.addidas_superstar .name_pic_wrap .name span {
+    /* outline: red solid 5px; */
+}
+
+.part_one .part_one_left .text {
+    margin-top: 45px;
+}
+
+.part_one_left .text p {
+    /* outline: red solid 5px; */
+    width: 787px;
+    min-height: 385px;
+}
+
+
+
+
+
+
+.addidas_superstar .part_two .shoes .pic {
+    width: 850px;
+
+}
+
+.addidas_superstar .part_two .shoes .pic img {
+    width: 100%;
+}
+
+.addidas_superstar .part_two {
+    display: flex;
+    gap: 46px;
+    margin-left: 67px;
+
+}
+.addidas_superstar .part_two .text {
+    font-size: 36px;
+    min-height: 292px;
+    width: 804px;
+    align-self: center;
+}
+
+
+
+
+
+
+
