@@ -1,16 +1,58 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
+
+/* //////////////////// */
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .store_wrap {
     width: 100%;
 }
 
-.shoes_store_items_wrap {
+/* .shoes_store_items_wrap {
     width: 1584px;
     margin: 0 auto;
-}
+} */
 
 .store_wrap .title_img {
     width: 100%;
@@ -38,8 +80,9 @@
 
 .store_wrap .hot_label {
     display: flex;
-    width: 100%;
-
+    max-width: 1720px;
+    flex-wrap: wrap;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -50,12 +93,14 @@
 
 .store_wrap .hot_label .label .label_inside {
     width: 159px;
-    height: 48px;
+    aspect-ratio: 3.3125;
     text-align: center;
     line-height: 48px;
     border-radius: 29px;
     border: black 2px solid;
     font-size: 18px;
+    padding: 5px;
+    flex-shrink: 0;
 }
 
 .store_wrap .hot_label .result {
@@ -70,15 +115,18 @@
 .sidebar_hamberger {
     margin: 30px 0 0 0;
     width: 100%;
+
 }
 
 .sidebar_nav {
-    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
     background-color: #D9D9D9;
     height: 68px;
-    box-shadow: 0 2px 2px black;
-    border: 1px solid black;
+    /* box-shadow: 0 2px 2px black; */
+    border-bottom: 1px solid black;
     position: relative;
+    border-radius: 10px;
 }
 
 .sidebar_button {
@@ -121,12 +169,13 @@
     width: 100%;
     /* padding: 42px 0 0 0; */
     /* outline: blue 5px solid; */
-    background-color: #D9D9D9;
+    background-color: #d9d9d9db;
+    border-radius: 0 0 15px 15px;
 
 }
 
 .sidebar_body_wrap {
-    width: 1375px;
+    max-width: 1375px;
     min-height: 390px;
     margin: 0 auto;
     /* border: black 5px solid; */
@@ -136,7 +185,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
 
 .filter_search .search {
@@ -145,6 +194,7 @@
 
 .filter button {
     font-size: 34px;
+    border-radius: 10px;
 }
 
 .sidebar_body .filter_search .search i {
@@ -166,8 +216,9 @@
 
 .checkbox_wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 1248px;
+    max-width: 1248px;
     /* margin: 0 auto; */
     /* outline: blue 5px solid; */
 }
@@ -176,6 +227,7 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    padding: 15px;
 
 }
 
@@ -210,7 +262,7 @@ input[type='checkbox'] {
 }
 
 .sidebar_body {
-   height:0px;
+    height: 0px;
     top: 68px;
     left: 0;
     position: absolute;
@@ -221,29 +273,31 @@ input[type='checkbox'] {
 
 .sidebar_body_open {
     transition: all 0.4s 0.1s;
-    height:600px;
-    overflow: hidden;
+    min-height: 600px;
+    /* overflow: hidden; */
     padding-top: 42px;
 }
 
 .shoes_items_cardlist {
-    display: flex;
+    /* display: flex; */
     /* justify-content: space-between; */
-    flex-wrap: wrap;
-    gap: 36px;
+    /* flex-wrap: wrap; */
+    /* gap: 36px; */
+    margin: 0;
 
 }
 
 .shoes_items_cardlist .shoes_card {
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
     /* justify-content: space-evenly */
 
 }
 
-.shoes_items_cardlist {
+/* .shoes_items_cardlist {
     padding: 40px 0px;
-}
+} */
 
 .shoes_card .brand_logo {
     width: 80px;
@@ -258,7 +312,7 @@ input[type='checkbox'] {
 }
 
 .shoes_items_cardlist .shoes_card .pic {
-    width: 368px;
+    width: 100%;
 }
 
 .shoes_items_cardlist .shoes_card .pic img {
@@ -282,6 +336,7 @@ input[type='checkbox'] {
 
 .price_stars {
 
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -303,6 +358,7 @@ input[type='checkbox'] {
 }
 
 .shoes_card {
+
     /* outline: blue 5px solid; */
     /* border: black solid 1px; */
 }
@@ -316,6 +372,7 @@ input[type='checkbox'] {
     gap: 30px;
 }
 
+
 .shoes_item_page .page_number {
     background-color: white;
     width: 28.43px;
@@ -328,7 +385,7 @@ input[type='checkbox'] {
 }
 
 .shoes_item_page i {
-    margin: 0 40px;
+    /* margin: 0 40px; */
     font-size: 20px;
 }
 
@@ -340,35 +397,100 @@ input[type='checkbox'] {
 
 .shoes_card .shoes_pic_wrap .pic {
     overflow: hidden;
-    height: 366px;
+    /* height: 366px; */
 
 }
 
 
 .shoes_item_page .page_number {
-   border:none;
-   box-shadow: 1px 1px 1px black;
+    border: none;
+    /* box-shadow: 1px 1px 1px black; */
 }
 
 
 
-.checkbox_wrap{
+.checkbox_wrap {
     margin-top: 60px;
 }
 
-.filter_search .filter button{
+.filter_search .filter button {
     font-size: 30px;
-    padding:5px 10px;
+    padding: 5px 10px;
 }
 
-.shoes_items .shoes_items_cardlist a{
-    color:#000000;
-}
-
-
-
-.checkbox_wrap >div input{
-    margin: 0 10px 0 0 ;
+.shoes_items .shoes_items_cardlist a {
+    color: #000000;
 }
 
 
+
+.checkbox_wrap>div input {
+    margin: 0 10px 0 0;
+}
+
+.shoes_items {
+    max-width: 1720px;
+    padding: 50px 0 0 0;
+}
+
+.shoes_love_icon {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .hot_label {
+        /* display: block; */
+        flex-wrap: wrap;
+    }
+
+    .store_wrap .hot_label .label {
+        flex-wrap: wrap;
+    }
+
+    .sidebar_body_open {
+        min-height: 1700px;
+    }
+
+    @media screen and (max-width:1024px) {
+        .store_wrap .hot_label .label .label_inside {
+            width: 150px;
+            height: 50px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .store_wrap .hot_label .label .label_inside {
+            display: none;
+        }
+
+        .hot_label .label i{
+            display: none;
+            
+        }
+    }
+
+    .shoes_item_page {
+        font-size: 16px;
+    }
+
+    /* .shoes_card{
+        padding:30px 0
+    }  */
+
+
+    .page_number_dot {
+        display: none;
+    }
+
+    .checkbox_wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .filter_search .search {
+        margin-top: 15px;
+    }
+
+}

@@ -8,24 +8,21 @@
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
-    </style>
-    <style>
         @import url("style.css");
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('footer.css');
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
     <link rel="stylesheet" href="owlstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="nav.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-
-
     <button class="hamberger">
         <div class="open_hamberger">
             <span></span>
@@ -39,15 +36,15 @@
     <div class="hamberger_navbar">
         <div class="hamberger_navbar_wrap">
             <ul class="clip_wrap">
-                <li class="text"><a class="word_animation" data-word="INDEX" href="index.html"><span class="hambergerword"
-                            data-word-inside="INDEX">INDEX</span></a></li>
+                <li class="text"><a class="word_animation" data-word="INDEX" href="index.html"><span
+                            class="hambergerword" data-word-inside="INDEX">INDEX</span></a></li>
                 <li class="text"><a class="word_animation" data-word="BLOG" href="blog.html"><span class="hambergerword"
                             data-word-inside="BLOG">BLOG</span></a></li>
-                <li class="text"><a class="word_animation" data-word="LOGIN" href="login.html"><span class="hambergerword"
-                            data-word-inside="LOGIN">LOGIN</span></a></li>
-                <li class="text"><a class="word_animation" data-word="STORE" href="store.html"><span class="hambergerword"
-                            data-word-inside="STORE">STORE</span></a></li>
-                <li class="text"><a class="word_animation" data-word="CART" href="#"><span class="hambergerword"
+                <li class="text"><a class="word_animation" data-word="LOGIN" href="login.html"><span
+                            class="hambergerword" data-word-inside="LOGIN">LOGIN</span></a></li>
+                <li class="text"><a class="word_animation" data-word="STORE" href="store.html"><span
+                            class="hambergerword" data-word-inside="STORE">STORE</span></a></li>
+                <li class="text"><a class="word_animation" data-word="CART" href="checkout.html"><span class="hambergerword"
                             data-word-inside="CART">CART</span></a></li>
             </ul>
         </div>
@@ -64,20 +61,24 @@
                             data-word-inside="login">login</span></a></li>
                 <li class="text"><a class="nav_word_animation" href="store.html" data-word="store"><span
                             data-word-inside="store">store</span></a></li>
-                <li class="text"><a class="nav_word_animation" href="#" data-word="cart"><span
+                <li class="text"><a class="nav_word_animation" href="checkout.html" data-word="cart"><span
                             data-word-inside="cart">cart</span></a></li>
             </ul>
         </nav>
     </header>
     <div class="shoes_part_one_two_wrap">
 
-        <div class="shoes_part_one">
+        <section class="shoes_part_one" id="part_one">
 
             <div class="new_shoes_firstname"><span>NIKE</span></div>
             <div class="new_shoes_secondname"><span>AIR</span> <span>JORDAN</span></div>
-            <div class="pic"><img src="img\image_1-removebg-preview 1 (1).png" alt=""></div>
-            <div class="big_orange"> </div>
 
+            <div class="pic"><img src="img\image_1-removebg-preview 1 (1).png" alt="">
+                <div class="part_one_shadow"></div>
+            </div>
+
+
+            <div class="big_orange"></div>
 
 
             <div class="down_black_left"></div>
@@ -85,20 +86,33 @@
             <div class="scrolling"><span>scrolling</span></div>
             <div class="progress_bar">
                 <ul>
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
+                    <a class="active progress_bar_color" href="#part_one">
+                        <li></li>
+                    </a>
+                    <a href="#part_two">
+                        <li></li>
+                    </a>
+                    <a href="#part_three">
+                        <li></li>
+                    </a>
                 </ul>
             </div>
-        </div>
-        <div class="shoes_part_two">
-            <div class="part_two_progress_bar">
+            <div class="top_blue_right">
+            </div>
+            <div class="top_blue_right_down">
+                <div class="number_zero_one"><span> 01</span></div>
+                <div class="more_information"><a href="shoes_detail.html" class="more"><span>more</span>
+                        <span>information</span><span class="arrow_part_one"></span></a> </div>
+            </div>
+        </section>
+        <section class="shoes_part_two" id="part_two">
+            <!-- <div class="part_two_progress_bar">
                 <ul>
                     <li></li>
                     <li class="active"><span>#2</span></li>
                     <li></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="part_two_left_black"></div>
             <div class="part_two_shoes">
                 <img src="img/shoe-intro-removebg-preview.png" alt="">
@@ -108,19 +122,19 @@
                 <span>AIR </span>
                 <span>PEGASUS </span>
             </div>
-        </div>
 
-        <div class="top_blue_right">
-        </div>
-        <div class="top_blue_right_down">
-            <div class="number_zero_one"><span> 01</span></div>
-            <div class="more_information"><a href="shoes_detail.html" class="more"><span>more</span> <span>information</span><span
-                        class="arrow_part_one"></span></a> </div>
-        </div>
+
+            <div class="daimond"></div>
+            <div class="part_two_left_blue"><span>02</span>
+                <div class="more_information"><a href="shoes_detail.html" class="more"><span>more</span>
+                        <span>information</span><span class="arrow_part_one"></span></a> </div>
+            </div>
+        </section>
+
 
 
     </div>
-    <div class="shoes_part_three">
+    <section class="shoes_part_three" id="part_three">
         <div class="shoes_part_three_wrap">
             <div class="pic_wrap">
                 <div class="left_shoes">
@@ -129,10 +143,9 @@
                         <img src="img/shopping.webp" alt="">
                     </div>
                     <div class="text">
-                        <p>A classic sneaker that has achieved legendary status since its introduction in the 1960s. It
+                        <p> A classic sneaker that has achieved legendary status since its introduction in the 1960s. It
                             gained immense popularity in the 1980s as a streetwear and hip-hop fashion staple. The
-                            Superstar is recognized for its distinctive shell toe design, leather upper, and signature
-                            three stripes. It offers excellent comfort, support, and durability. </p>
+                            Superstar is recognized for its distinctive shell toe design. </p>
                     </div>
                 </div>
                 <div class="middle_shoes">
@@ -141,8 +154,6 @@
                     </div>
                 </div>
                 <div class="right_shoes">
-
-
 
                     <div class="pic">
                         <img src="img/000001_1659492418.jpg" alt="">
@@ -161,8 +172,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="part_four">
+    </section>
+    <section class="part_four">
         <div class="part_four_wrap">
             <div class="left_blue_block"></div>
             <div class="slider_wrap">
@@ -214,7 +225,7 @@
                                     feet dry in wet conditions. They provide ample cushioning and support to reduce
                                     fatigue during long hikes.</p>
                             </div>
-                            <a href="blog.html">
+                            <a class="button_wrap" href="blog.html">
                                 <div class="button"><span>blog</span></div>
                             </a>
                         </div><img src="img\472cdca3da58f700dbac77282e43ac48.jpg">
@@ -224,13 +235,11 @@
             <div class="item"> <img data-img="img/shopping.webp" src="img/shopping.webp"></div> -->
                 </div>
             </div>
-        
-           
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
                 integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <!-- <script src="OwlCarousel2-2.3.4\dist\owl.carousel.js"></script> -->
+
+            <script src="OwlCarousel2-2.3.4\dist\owl.carousel.js"></script>
             <script>
                 $(document).ready(function () {
                     $(".owl-carousel").owlCarousel({
@@ -255,23 +264,16 @@
                     let right = document.querySelector('.owl-next span')
                     right.innerHTML = '<i class="fa-solid fa-arrow-right-long"></i>'
 
-
-
                 });
 
 
             </script>
         </div>
 
+    </section>
 
 
-
-
-
-    </div>
-
-
-    <div class="cooperate">
+    <section class="cooperate">
         <div class="cooperate_wrap">
             <h3>Cooperate</h3>
             <div class="logo_part1">
@@ -284,61 +286,65 @@
                 <div class="pic"><img src="img/New-Balance-Logo-500x281.png" alt=""></div>
             </div>
         </div>
-    </div>
-
-
-    <div class="main_footer">
-        <div class="footer_wrap">
-            <div class="footer_item_left">
-                <div class="logo"><img src="img/Group 69.png"></div>
-                <div class="text">
-                    <p>Athletes in all sports face mental challenges that can be just as difficult to overcome as
-                        physical obstacles. Mental toughness is an essential component of athletic success, allowing
-                        athletes to push through adversity and perform at their best when it matters most.
-                    </p>
-                </div>
-                <div class="subscribe">
-                    <form action="">
-                        <input type="text">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Browse</h4>
-                <div class="footer_nav">
-                    <a href="index.html">Home</a>
-                    <a href="login.html">Login</a>
-                    <a href="store.html">Store</a>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Information</h4>
-                <div class="footer_nav">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">New shoes</a>
-                    <a href="#">About us</a>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Connect</h4>
-                <div class="footer_nav">
-                    <div class="icon">
-                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    </section>
+    <footer>
+        <div class="main_footer">
+            <div class="footer_wrap">
+                <div class="footer_row">
+                    <div class="footer_col footer_title">
+                        <div class="logo"><img src="img/Group 69.png"></div>
+                        <!-- <div class="text">
+                        <p>Athletes in all sports face mental challenges that can be just as difficult to overcome as
+                            physical
+                        </p>
+                    </div> -->
+                        <!-- <div class="subscribe">
+                        <form action="">
+                            <input type="text">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div> -->
                     </div>
-
+                    <div class="footer_col">
+                        <h4>Browse<div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="store.html">Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Information <div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">New shoes</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Connect<div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul class="connect_button">
+                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></i>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-
         </div>
+        <div class="nocopyright">nocopyright<i class="fa-regular fa-copyright"></i>只當作網頁切版練習</div>
+    </footer>
 
 
-    </div>
 
-    <script src="script.js"></script>
+
+
+
+
+
 
 
 

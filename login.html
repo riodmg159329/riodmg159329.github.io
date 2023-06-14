@@ -11,11 +11,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        @import url('nav.css');
+        @import url('footer.css');
         @import url('login.css');
-        @import url('nav_footer.css');
+        /* @import url('nav_footer.css'); */
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
     </style>
+    <script src="nav.js"></script>
     <style>
         * {
             margin: 0;
@@ -41,15 +44,15 @@
     <div class="hamberger_navbar">
         <div class="hamberger_navbar_wrap">
             <ul class="clip_wrap">
-                <li class="text"><a class="word_animation" data-word="INDEX" href="index.html"><span class="hambergerword"
-                            data-word-inside="INDEX">INDEX</span></a></li>
+                <li class="text"><a class="word_animation" data-word="INDEX" href="index.html"><span
+                            class="hambergerword" data-word-inside="INDEX">INDEX</span></a></li>
                 <li class="text"><a class="word_animation" data-word="BLOG" href="blog.html"><span class="hambergerword"
                             data-word-inside="BLOG">BLOG</span></a></li>
-                <li class="text"><a class="word_animation" data-word="LOGIN" href="login.html"><span class="hambergerword"
-                            data-word-inside="LOGIN">LOGIN</span></a></li>
-                <li class="text"><a class="word_animation" data-word="STORE" href="store.html"><span class="hambergerword"
-                            data-word-inside="STORE">STORE</span></a></li>
-                <li class="text"><a class="word_animation" data-word="CART" href="#"><span class="hambergerword"
+                <li class="text"><a class="word_animation" data-word="LOGIN" href="login.html"><span
+                            class="hambergerword" data-word-inside="LOGIN">LOGIN</span></a></li>
+                <li class="text"><a class="word_animation" data-word="STORE" href="store.html"><span
+                            class="hambergerword" data-word-inside="STORE">STORE</span></a></li>
+                <li class="text"><a class="word_animation" data-word="CART" href="checkout.html"><span class="hambergerword"
                             data-word-inside="CART">CART</span></a></li>
             </ul>
         </div>
@@ -65,7 +68,7 @@
                             data-word-inside="login">login</span></a></li>
                 <li class="text"><a class="nav_word_animation" href="store.html" data-word="store"><span
                             data-word-inside="store">store</span></a></li>
-                <li class="text"><a class="nav_word_animation" href="#" data-word="cart"><span
+                <li class="text"><a class="nav_word_animation" href="checkout.html" data-word="cart"><span
                             data-word-inside="cart">cart</span></a></li>
             </ul>
         </nav>
@@ -119,55 +122,59 @@
             </div>
         </div>
     </div>
-    <div class="main_footer">
-        <div class="footer_wrap">
-            <div class="footer_item_left">
-                <div class="logo"><img src="img/Group 69.png"></div>
-                <div class="text">
-                    <p>Athletes in all sports face mental challenges that can be just as difficult to overcome as
-                        physical obstacles. Mental toughness is an essential component of athletic success, allowing
-                        athletes to push through adversity and perform at their best when it matters most.
-                    </p>
-                </div>
-                <div class="subscribe">
-                    <form action="">
-                        <input type="text">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Browse</h4>
-                <div class="footer_nav">
-                    <a href="index.html">Home</a>
-                    <a href="login.html">Login</a>
-                    <a href="store.html">Store</a>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Information</h4>
-                <div class="footer_nav">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">New shoes</a>
-                    <a href="#">About us</a>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Connect</h4>
-                <div class="footer_nav">
-                    <div class="icon">
-                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    <footer>
+        <div class="main_footer">
+            <div class="footer_wrap">
+                <div class="footer_row">
+                    <div class="footer_col footer_title">
+                        <div class="logo"><img src="img/Group 69.png"></div>
+                        <!-- <div class="text">
+                        <p>Athletes in all sports face mental challenges that can be just as difficult to overcome as
+                            physical
+                        </p>
+                    </div> -->
+                        <!-- <div class="subscribe">
+                        <form action="">
+                            <input type="text">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div> -->
                     </div>
-
+                    <div class="footer_col">
+                        <h4>Browse<div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="store.html">Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Information <div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">New shoes</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Connect<div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul class="connect_button">
+                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></i>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="nocopyright">nocopyright</noscript><i class="fa-regular fa-copyright"></i>只當作網頁切版練習</div>
+    </footer>
 
 
-    <script src="script.js"> </script>
+    <!-- <script src="script.js"> </script> -->
 
 
 </body>

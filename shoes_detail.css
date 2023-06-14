@@ -250,7 +250,7 @@
 .sportshoes_detail_introduce_wrap {
     /* outline: red 5px solid; */
     padding: 50px 0;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -280,6 +280,7 @@
     grid-row: 5/10;
     /* border: blue 5px solid; */
     overflow: hidden;
+    /* outline: blue solid 5px; */
 }
 
 .introduce_shoes_right_img .pic {
@@ -331,9 +332,9 @@
 
 /* ///////////////////// */
 .shoes_reviews_wrap {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
-    /* outline: red 5px solid; */
+    /* outline: red 5px solid !important; */
     padding: 30px 0;
 }
 
@@ -482,9 +483,20 @@
     font-size: 22px;
 }
 
+.reviews_average {
+    flex-wrap: wrap;
+}
+
 .review_this_product_wrap .give_stars {
     display: flex;
     gap: 15px;
+    /* flex-wrap: wrap; */
+}
+
+.review_this_product_wrap .give_stars>div {
+    flex-shrink: 0;
+
+
 }
 
 .review_this_product_wrap .give_stars i {
@@ -495,9 +507,9 @@
 .review_this_product_wrap .give_stars>div {
     /* border: 1px solid black; */
     background-color: #0091CF;
-    ;
-    width: 51px;
-    height: 51px;
+    width: 16.190476%;
+    aspect-ratio: 1/1;
+    /* height: 51px; */
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -531,7 +543,7 @@
 }
 
 .people_face {
-    width: 105px;
+    width: 118px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -577,13 +589,28 @@
     display: flex;
     gap: 80px;
     padding: 0 50px;
+    flex-wrap: wrap;
 }
 
 .main_comment .text {
     font-size: 18px;
-    width: 588px;
+    max-width: 588px;
     flex-grow: 1;
     /* outline: red 5px solid; */
+}
+
+
+.feel_comment .size_progress_bar {
+    /* outline: red 5px solid; */
+}
+
+.feel_progress_bar {
+    width: 100%;
+    /* outline: blue 5px solid; */
+}
+
+.feel_comment .size_progress_bar {
+    width: 100% !important;
 }
 
 
@@ -611,7 +638,7 @@
     background-color: #000000;
     border-radius: 50%;
     top: 0;
-    left: 125px;
+    left: 36.231884058%;
 }
 
 .feel_comment .fit_progress_bar {
@@ -630,7 +657,7 @@
     background-color: #000000;
     border-radius: 50%;
     top: 0;
-    left: 225px;
+    left: 65.217391304%;
 
 }
 
@@ -696,7 +723,7 @@ body .comment_wrap .top_comment:nth-of-type(3) .people_face .pic img {
     width: 300px;
     height: 50px;
     border-radius: 10px;
-    background-color: #D9D9D9;
+    background-color: #eeecec;
     font-size: 20px;
 }
 
@@ -711,7 +738,7 @@ body .comment_wrap .top_comment:nth-of-type(3) .people_face .pic img {
 
 .see_more_product_wrap {
     /* padding: 80px 0; */
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -842,13 +869,104 @@ html {
     scroll-behavior: smooth;
 }
 
+.owl-carousel .item {
+    cursor: pointer;
+}
 
 
 
-.add_to_cart button{
+.add_to_cart button {
     border-radius: 5px;
 }
+
 .add_to_cart button:hover {
     color: white;
     background-color: #000000;
+}
+
+@media screen and (max-width:1318px) {
+    .main_comment {
+        order: 1
+    }
+
+    .shoes_reviews_wrap {
+        max-width: 70%;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .sportshoes_detail_introduce_wrap {
+        display: block;
+        
+    }
+    .introduce_shoes_left_img .pic{
+        transform: translate(0);
+    }
+    .introduce_shoes_right_img .pic{
+        transform: translate(0);
+    }
+    .introduce_shoes_right_text{
+        padding:80px 20px
+    }
+    .introduce_shoes_left_text{
+        padding: 80px 20px;
+    }
+  
+}
+
+@media screen and (max-width:1024px){
+    .shoes_reviews_wrap {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .owl-theme .owl-nav {
+        display: none;
+    }
+   
+
+    .feel_comment .size_progress_bar {
+        width: 100%;
+        /* outline: 5px red solid; */
+
+    }
+    
+    .reviews_average {
+        display: block;
+    }
+
+    .top_comment {
+        display: block;
+    }
+
+    .feel_comment div:nth-child(2) {
+        width: 100%;
+    }
+
+    .feel_comment>div {
+        width: 100% !important;
+        /* outline: 5px rgb(157, 0, 255) solid; */
+    }
+
+    .reviews_average>div {
+        padding: 10px 0;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .see_more_comment button {
+        width: 100%;
+    }
+}
+
+/* 
+.feel_progress_bar{
+    display: block;
+} */
+.see_more_comment {
+    padding: 0 50px;
 }

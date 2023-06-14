@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
+
+}
+
+section {
+    /* outline: red solid 5px; */
+    margin: 0 auto;
+    max-width: 1646px;
+
+}
+
+.pay_wrap {
+    /* outline: #037ff3 5px solid; */
+
+}
+
+.eng_name {
+    color: #ffd700;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.total_shoes_area {
+    min-height: 300px;
+    /* outline: purple 10px solid; */
+}
+
+.sport_style {
+    font-size: 24px;
+    text-align: center;
+}
+
+.shoes_title span {
+    font-size: 32px;
+
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px 0;
+
+}
+
+.more_deg_pic {
+    /* outline: red solid 5px; */
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.more_deg_pic>div .pic {
+    width: 87px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border-radius: 27.2108884%;
+    margin: 0 10px;
+    overflow: hidden;
+
+}
+
+
+.more_deg_pic .pic img {
+    width: 100%;
+
+}
+
+.deg_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.deg_card>div+div {
+
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #037ff3;
+}
+
+.shoes_title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.total_shoes_area {
+    padding: 2%;
+    /* outline: 20px green solid; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px black;
+
+}
+
+.shoes_change {
+    position: relative;
+}
+
+
+.showpic .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 16px;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+
+.showpic {
+    position: relative;
+    text-align: center;
+}
+
+.showpic .pic img {
+    width: 70%;
+    transform-origin: bottom;
+}
+
+.showpic .pic {
+    width: 100%;
+}
+
+.dot,
+.dot_index {
+    padding: 5% 0 0 0;
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot_index span {
+    width: 2.4113%;
+    aspect-ratio: 1/1;
+    /* background-color: white; */
+    border: 2px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.dot_index .dot_index_active {
+    background-color: gray
+}
+
+.prev_next_bar {
+    position: absolute;
+    /* height: 0; */
+    top: 40%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev_next_bar button {
+    font-size: 2.5vw;
+    cursor: pointer;
+    width: 8%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.prev_next_bar button:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.15);
+}
+
+
+
+.creditcard_area {
+    /* outline: rgb(0, 255, 47) 50px solid; */
+    height: 75vh;
+    padding: 50px 0 50px 0;
+}
+
+
+.creditcard_touch {
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 755px;
+    transform: translate(0, 10%);
+    aspect-ratio: 2.024128;
+    perspective: (1000px);
+    /* outline: red 5px solid; */
+    position: relative;
+    z-index: 3;
+    transition: transform .4s ease-out;
+    cursor: pointer;
+}
+
+/* .creditcard_touch:hover .creditcard_wrap {
+    transform: rotateY(180deg);
+} */
+
+.creditcard_wrap {
+    border-radius: 15px;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    /* outline: red 5px solid; */
+    transition: transform .6s ease-out;
+}
+
+.creditcard {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* outline: orange 10px solid; */
+    width: 100%;
+    height: 100%;
+    background-image: url('img/image-from-rawpixel-id-581585-original-converted_53876-127206.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 3%; */
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+
+}
+
+.creditcard_wrap .creditcard_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/image-from-rawpixel-id-581585-original-converted_53876-127206.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    padding: 6% 0;
+
+}
+
+.magnetic_stripe {
+    box-sizing: border-box;
+    aspect-ratio: 655/60;
+    background-color: black;
+}
+
+.back_information_wrap {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+    padding: 0 5%;
+    height: 100%;
+}
+
+.company_ccv_wrap {
+    display: flex;
+    background-color: blue;
+    aspect-ratio: 655/60;
+    margin: 3% 0;
+}
+
+.company_ccv_wrap .company {
+    background-color: gray;
+    flex: 1 1 65%;
+
+}
+
+.company_ccv_wrap .ccv_number_area {
+    /* width: 500px; */
+    background-color: white;
+    border: 1px solid black;
+    flex: 1 1 auto;
+
+}
+
+.creditcard_back .back_information_wrap>p {
+    padding: 2% 0;
+}
+
+.bank_footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank_footer_wrap .pic {
+    width: 18%;
+}
+
+.bank_footer_wrap .pic img {
+    width: 100%;
+}
+
+.creditcard .pic,
+.creditcard .card_number,
+.creditcard .card_number,
+.creditcard .holer_exp_wrap {
+    padding: 2%;
+}
+
+.creditcard .pic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creditcard_form {
+    /* outline: blue solid 5px; */
+}
+
+.month_select option {
+    font-size: 20px;
+}
+
+.year_select option {
+    font-size: 20px;
+}
+
+.creditcard .chip {
+    /* transform: translate(40%, 40%); */
+    width: 11.6129%;
+}
+
+.creditcard .card_type {
+    /* transform: translate(-40%,40%);  */
+    width: 18.6129%;
+
+}
+
+.creditcard .card_type img {
+    width: 100%;
+}
+
+.creditcard .chip img {
+    width: 100%;
+}
+
+.creditcard .holer_exp_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creditcard .card_holder>p,
+.creditcard .card_month_year>p {
+    padding: 5px 0;
+}
+
+.card_holder_name {
+    font-family: 'Kalam', cursive;
+}
+
+/* .month_year_input .month_select {
+    position: relative;
+}
+.month_year_input .month_select option{
+    position:absolute;
+    top: 0;
+    left:0;
+    transform: translateY(100%);
+} */
+.creditcard_form {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.verify {
+    color: #ffd700;
+    font-size: 20px;
+    transform: translate(0, -50%);
+}
+
+.ccv_check {
+    color: #ffd700;
+    font-size: 20px;
+    transform: translate(0, -50%);
+}
+
+.card_number p {
+    font-size: 35px;
+}
+
+.creditcard .holer_exp_wrap>div p {
+    font-size: 20px;
+}
+
+.back_information_wrap p {
+    font-size: 12px;
+}
+
+.creditcard_form form {
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    max-width: 779px;
+    background-color: #141d2b;
+    padding: 8.22222% 2%;
+    text-transform: uppercase;
+}
+
+
+
+.creditcard_form form .input_area {
+    padding: 35px 0;
+    position: relative;
+}
+
+.creditcard_form form .month_year_input .input_area option {
+    color: black;
+}
+
+/* .creditcard_form form .month_year_input .input_area select{
+    position: relative;
+}
+.creditcard_form form .month_year_input .input_area >div{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+/* .creditcard_form form .submit_btn {
+    display: none;
+} */
+.creditcard_form form .submit_btn {
+    /* aspect-ratio: 4.527472; */
+    display: flex;
+    /* outline: #037ff3 5px solid; */
+    background-color: #037ff369;
+    border: none;
+    transition: all 1s;
+    min-height: 185px;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    border-radius: 40px;
+    overflow: hidden;
+    /* break-before: 5px; */
+}
+
+.creditcard_form form .input_area label {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.creditcard_form form .input_area input,
+.creditcard_form form .input_area select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 36px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.creditcard_form form .input_area input:focus,
+.creditcard_form form .input_area select:focus {
+    outline: none;
+}
+
+.creditcard_form form .input_area:after {
+    position: absolute;
+    top: 78%;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    /* background-color:#0972d2 ; */
+    background-image: linear-gradient(to right, #188efd 0%, #141d2b 90%);
+    box-shadow: 0 0 10px #0055b4;
+}
+
+.creditcard_form .month_year_input {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.creditcard_form .month_year_input .input_area {
+    flex: 1 1 150px;
+}
+
+
+
+.creditcard_form form .submit_btn:hover>div+div {
+    letter-spacing: 2px;
+    opacity: .8;
+    background-color: #037ff3;
+    font-size: 60px;
+}
+
+.creditcard_form form .submit_btn>div:first-child {
+    width: 47%;
+    font-size: 45px;
+    background-color: #FFF;
+    color: black;
+
+
+}
+
+.creditcard_form form .submit_btn>div+div {
+    background-color: #0070d6;
+    width: 100%;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px #0055b4;
+    cursor: pointer;
+}
+
+.creditcard_form form .submit_btn>div+div a {
+    color: white;
+}
+
+.creditcard_form form .submit_btn>div:first-child p:nth-of-type(1) {
+    text-align: left;
+    padding: 15px;
+    color: black;
+
+}
+
+.creditcard_form form .submit_btn>div:first-child p:nth-of-type(2) {
+    text-align: right;
+    padding: 20px;
+
+
+}
+
+.form_product_wrap .pay_wrap {
+    display: none;
+}
+
+.creditcard_area {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    /* outline: red 5px solid ; */
+}
+
+.ccv_number_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addborder {
+    border: 4px solid #037ff3;
+    box-shadow: 0 0 4px #1e91fd;
+    border-radius: 10px;
+}
+
+
+.deg_card .active_background_color {
+    border: 4px solid #037ff3;
+    box-shadow: 0 0 4px #1e91fd;
+}
+
+.deg_card .active_border_color {
+    border: 5px#037ff3 solid;
+    box-shadow: 0 0 4px #1e91fd;
+}
+
+.more_deg_pic .deg_card img {
+    transform: translateY(-10%);
+}
+
+.shoes_title {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative
+}
+
+.cover_animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: 0.3s ease;
+}
+
+.company_ccv_wrap .company {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Freehand', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+@media screen and (min-width:700px) {}
+
+
+@media screen and (min-width:768px) {
+    .creditcard_form form {
+        padding: 8.666666% 8.222222%;
+        border-radius: 57px;
+        height: 986px;
+    }
+
+    .more_deg_pic>div .pic {
+        width: 147px;
+    }
+
+    .deg_card>div+div {
+        width: 20px;
+    }
+
+    .deg_card {
+        gap: 20px;
+    }
+
+    .back_information_wrap p {
+        font-size: 20px;
+    }
+
+
+
+
+    /* section {
+        padding: 32px 32px 0 32px;
+    } */
+
+
+
+
+
+    .card_number p {
+        font-size: 57px;
+    }
+
+    .creditcard .holer_exp_wrap>div p {
+        font-size: 30px;
+
+    }
+
+    .creditcard_form form .submit_btn>div+div {
+        font-size: 80px;
+    }
+
+    .creditcard_form form .submit_btn>div+div:hover {
+        font-size: 95px;
+    }
+
+    .creditcard_form form .submit_btn {
+        transform: translate(0, 92px);
+        transition: all 1s;
+    }
+
+    .company_ccv_wrap .company {
+        font-size: 50px;
+    }
+
+    .ccv_number_area {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:1024px) {}
+
+@media screen and (min-width:1200px) {
+
+    .creditcard_form form {
+        border-radius: 57px 0 0 57px;
+    }
+
+    .creditcard_form .creditcard_touch {
+        transform: translate(10%, 30%);
+    }
+
+    .creditcard_form form:after {
+        border-color: #141d2b transparent transparent #141d2b;
+        border-style: solid solid solid solid;
+        border-width: 493px 67px;
+        border-radius: 0 57px 0 0;
+        height: 0px;
+        width: 0px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+
+    .form_product_wrap {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+    .creditcard_form form .submit_btn {
+        aspect-ratio: 4.327472;
+    }
+
+    .creditcard_area {
+        width: 100%;
+        margin: 0;
+    }
+
+    .font_wrap {
+        display: none;
+    }
+
+    .form_product_wrap .pay_wrap {
+        width: 859px;
+        /* aspect-ratio: 0.96516; */
+        display: block;
+    }
+}
+
+@media screen and (min-width:1440px) {}
+
+
+
+
+
+/* 動畫 */
+
+
+@keyframes shoes_move_up {
+    5% {
+        transform: scaleY(0.8)
+    }
+
+    10% {
+        transform: scaleY(1)
+    }
+
+    40% {
+        transform: translateY(-110vh)
+    }
+
+    60% {
+        transform: translateY(-110vh)
+    }
+
+    85% {
+        transform: translateY(0)
+    }
+
+    90% {
+        transform: scaleY(0.8)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+
+
+
+
+
+
+@keyframes shoes_move_up_shadow {
+    50% {
+        width: 0;
+        transform: translateX(-50%)
+    }
+
+    100% {
+        width: 100%;
+        transform: translateX(-50%)
+    }
+}
+
+
+
+@keyframes more_deg {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@keyframes shoes_more_deg_shadow {
+    50% {
+        transform:
+            translateX(-50%) scaleX(0.8);
+    }
+
+    100% {
+        transform:
+            translateX(-50%) scaleX(1)
+    }
+}
+
+
+@keyframes shake {
+    40% {
+        transform:
+            translateY(-8em) rotate(10deg);
+    }
+
+    70% {
+        transform:
+            translateY(-8em) rotate(0);
+    }
+
+    85% {
+        transform:
+            translateY(0) rotate(0deg);
+    }
+
+    87% {
+        transform: scaleY(0.8)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+
+}
+
+
+@keyframes span_ani {
+    0% {
+        transform: scaleX(0);
+        transform-origin: top left
+    }
+
+    30% {
+        transform: scaleX(1);
+        transform-origin: top left
+    }
+
+    60% {
+        transform: scaleX(1);
+        transform-origin: top right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: top right;
+
+    }
+}

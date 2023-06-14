@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        @import url('nav_footer.css');
+        @import url('grid.css');
+        @import url('shoes_ad.css');
+        @import url('nav.css');
+        @import url('footer.css');
         @import url('store_style.css');
         @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     </style>
-
+    <script src="nav.js"></script>
+    <script src="shoes_ad.js"></script>
+    <script src="store_sidebar.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -40,7 +45,7 @@
                             class="hambergerword" data-word-inside="LOGIN">LOGIN</span></a></li>
                 <li class="text"><a class="word_animation" data-word="STORE" href="store.html"><span
                             class="hambergerword" data-word-inside="STORE">STORE</span></a></li>
-                <li class="text"><a class="word_animation" data-word="CART" href="#"><span class="hambergerword"
+                <li class="text"><a class="word_animation" data-word="CART" href="checkout.html"><span class="hambergerword"
                             data-word-inside="CART">CART</span></a></li>
             </ul>
         </div>
@@ -57,23 +62,44 @@
                             data-word-inside="login">login</span></a></li>
                 <li class="text"><a class="nav_word_animation" href="store.html" data-word="store"><span
                             data-word-inside="store">store</span></a></li>
-                <li class="text"><a class="nav_word_animation" href="#" data-word="cart"><span
+                <li class="text"><a class="nav_word_animation" href="checkout.html" data-word="cart"><span
                             data-word-inside="cart">cart</span></a></li>
             </ul>
         </nav>
     </header>
 
+    <section class="advertise">
+        <div class="ad_container">
+            <div class="ani_area text_ani_wrap">
+                <span class="new_word">NEW</span>
+                <h1 class="shoes_word">SHOES</h1>
+                <ul class="type_ani">
+                    <li><span class="word_ani"></span><span></span></li>
+                </ul>
+                <div class="store_link">
+                    <button class="see_more"><a href="#store_wrap">SEE MORE</a></button>
+                    <button class="shop_now"><a href="shoes_detail.html">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="ani_area ">
+                <div class="shoes_pic_area">
+                    <div class="shoes_ani_backgroundcolor"> </div>
+                    <img src="img\shoes_main\shoes0_0\pic0.png" alt="" class="">
+                </div>
 
-
-
-
-
-
-
-    <div class="store_wrap">
-        <div class="title_img">
-            <!-- <div class="pic"><img src="store_img\bab49c920a8dd85b73e51fe6bdb739c5.jpg" alt=""></div> -->
+            </div>
+            <div class="shoes_index">
+                <div class="little_shoes_pic"><img src="img\shoes_main\shoes0_0\pic0.png" alt=""></div>
+                <div class="little_shoes_pic"><img src="img\shoes_main\shoes1_0\pic0.png" alt=""></div>
+                <div class="little_shoes_pic"><img src="img\shoes_main\shoes2_0\pic0.png" alt=""></div>
+            </div>
         </div>
+    </section>
+
+
+
+    <sectopn class="store_wrap" id="store_wrap">
+
         <div class="shoes_store_items_wrap">
 
 
@@ -82,8 +108,8 @@
 
                     <div class="icon"><i class="fa-solid fa-fire" style="color: #fe0606;"></i></div>
                     <div class="label_inside">#New Balance 530</div>
-                    <div class="label_inside">#PUMA Mayze Stack</div>
-                    <div class="label_inside">#New Balance 2002R</div>
+                    <div class="label_inside">#PUMA Mayze </div>
+                    <div class="label_inside">#New Balance </div>
                 </div>
                 <div class="result"><span>Result:50 items</span></div>
             </div>
@@ -170,12 +196,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="shoes_items">
-                <div class="shoes_items_cardlist">
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+            <div class="shoes_items container">
+                <div class="shoes_items_cardlist row">
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\41a4652a-8447-4d1d-8a58-8797769eb423.webp" alt="">
                                 </div>
@@ -194,10 +220,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+                        </a>
+                    </div>
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\b6c4ec00-7a30-43fc-9504-58cf27c00d67.webp" alt="">
                                 </div>
@@ -216,11 +244,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\6c6d0bc2-3733-45a1-933f-1442e61ed787.webp" alt="">
                                 </div>
@@ -239,11 +269,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\02ffc2b7-a1a7-4eb7-9fe7-9d211dcffc94.webp" alt="">
                                 </div>
@@ -262,11 +294,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card  col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\638157883980830000.jpg" alt="">
                                 </div>
@@ -285,11 +319,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\638197422915170000.jpg" alt="">
                                 </div>
@@ -308,11 +344,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\imageQC2000064526_2000_1.jpg" alt="">
                                 </div>
@@ -331,11 +369,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\imageQC2000064541_2000_1.jpg" alt="">
                                 </div>
@@ -354,11 +394,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\imageQC2000054525_2000_3.jpg" alt="">
                                 </div>
@@ -377,11 +419,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\imageQC2000072963_2000_1.jpg" alt="">
                                 </div>
@@ -400,11 +444,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\ml574evg_nb_02_i.webp" alt="">
                                 </div>
@@ -423,11 +469,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <a href="shoes_detail.html">
-                        <div class="shoes_card">
+
+
+                    <div class="shoes_card col-xl-3 col-lg-4 col-md-6  col-12">
+                        <a href="shoes_detail.html">
                             <div class="shoes_pic_wrap">
                                 <div class="pic"><img src="store_img\u327wed_nb_02_i.webp" alt="">
                                 </div>
@@ -446,12 +494,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-
-
+                        </a>
+                    </div>
                 </div>
             </div>
+
             <div class="shoes_item_page">
                 <div class="left"><i class="fa-solid fa-angles-left"></i></div>
                 <div class="page_number active">1</div>
@@ -464,69 +511,63 @@
 
             </div>
         </div>
-    </div>
-    <div class="main_footer">
-        <div class="footer_wrap">
-            <div class="footer_item_left">
-                <div class="logo"><img src="img/Group 69.png"></div>
-                <div class="text">
-                    <p>Athletes in all sports face mental challenges that can be just as difficult to overcome as
-                        physical obstacles. Mental toughness is an essential component of athletic success, allowing
-                        athletes to push through adversity and perform at their best when it matters most.
-                    </p>
-                </div>
-                <div class="subscribe">
-                    <form action="">
-                        <input type="text">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Browse</h4>
-                <div class="footer_nav">
-                    <a href="index.html">Home</a>
-                    <a href="login.html">Login</a>
-                    <a href="store.html">Store</a>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Information</h4>
-                <div class="footer_nav">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">New shoes</a>
-                    <a href="#">About us</a>
-                </div>
-            </div>
-            <div class="footer_item">
-                <h4>Connect</h4>
-                <div class="footer_nav">
-                    <div class="icon">
-                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    </div>
+    </sectopn>
 
+
+
+
+    <!-- <script src="script.js"></script> -->
+    <footer>
+        <div class="main_footer">
+            <div class="footer_wrap">
+                <div class="footer_row">
+                    <div class="footer_col footer_title">
+                        <div class="logo"><img src="img/Group 69.png"></div>
+                        <!-- <div class="text">
+                        <p>Athletes in all sports face mental challenges that can be just as difficult to overcome as
+                            physical
+                        </p>
+                    </div> -->
+                        <!-- <div class="subscribe">
+                        <form action="">
+                            <input type="text">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div> -->
+                    </div>
+                    <div class="footer_col">
+                        <h4>Browse<div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="store.html">Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Information <div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">New shoes</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Connect<div class="footer_ani"><span></span></div>
+                        </h4>
+                        <ul class="connect_button">
+                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></i>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="nocopyright">nocopyright</noscript><i class="fa-regular fa-copyright"></i>只當作網頁切版練習</div>
+    </footer>
 
-
-
-
-
-
-    <script>
-
-        document.querySelector('.sidebar_button').addEventListener('click', function () {
-            document.querySelector('.sidebar_body').classList.toggle('sidebar_body_open')
-        })
-
-
-
-    </script>
-    <script src="script.js"></script>
 
 
 
